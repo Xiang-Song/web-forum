@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.root {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: lightgray;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.main  {
+  width: 85%;
+  max-width: 1200px;
+  min-width: 375px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+  width: 30vw;
+  height: 10vw;
+}
+
+
+.logo-big {
+  width:100%;
+  margin-top: 1vw;
+  margin-bottom: 3vw;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.headbar {
+  height:10vw;
+  background-color: #393E46;
+  text-align: center;
+  margin-bottom: 1vw;
+}
+
+.headerbar-item {
+  display: flex;
+  align-items: flex-end;
+  font-size: 2vw;
+  color: #76EAD7;
+}
+
+.board-header {
+  background-color: darkgray;
+  font-size: 2vw;
+}
+
+.condition-button{
+ color: #07031A;
+}
+
+.display-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.display-center {
+  display: flex;
+  justify-content: center;
+}
+
+.hr-dotted {
+  border-top: 1px dotted lightgray;
+}
+
+.signup {
+  background-color: green;
+}
+
+.error-info {
+  font-size: large;
+  text-align: center;
+  color: red;
+}
+
+.ant-layout-sider {
+  background-color: #EEEEEE;
+}
+
+
+.thread-item {
+  background-color: whitesmoke;
+  margin:5px;
+  padding: 10px;
+  
+}
+
+.thread-item:hover {
+  position: relative;
+  left: -4px;
+  top: -2px;
+}
+
+
+
+.thread-main {
+  background-color: #eeecda;
+  margin-bottom: 10px;
+}
+.thread-reply {
+  background-color: #eeeceb;
+  margin-bottom: 1px;
+}
+.reply {
+  margin-top: 10px;
+}
+
+.ant-list-item {
+  display: flex;
+  justify-content: center;
+  background-color: #EEEEEE;
+  margin-top: 3px;
+  font-size: larger;
+  cursor: pointer;
+}
+
+.btn {
+  cursor: pointer;
 }

@@ -1,24 +1,33 @@
 import React from 'react';
-import logo from '../logo.svg';
+import { BrowserRouter, Route} from "react-router-dom";
+import Register from './Register';
+import 'antd/dist/antd.css';
 import './App.css';
+import Login from './Login';
+import Home from './Home';
+import Detail from './Detail';
+import { ForumProvider } from '../context/ForumContext';
+import NewThread from './NewThread';
+import NewCategory from './NewCategory';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        
+      <BrowserRouter>
+        <ForumProvider>
+          <div>
+            <Route path="/home" component={Home} /> 
+            <Route path="/login" component={Login} />
+            <Route path="/register" component={Register} />
+            <Route path="/thread/:id" component={Detail} />
+            <Route path="/newthread" component={NewThread} />
+            <Route path="/newcategory" component={NewCategory} />
+          </div>
+        </ForumProvider>
+      </BrowserRouter>
+
+      
     </div>
   );
 }

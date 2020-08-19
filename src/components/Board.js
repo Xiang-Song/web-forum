@@ -6,7 +6,7 @@ import { ForumContext } from '../context/ForumContext';
 const { Footer, Sider, Content } = Layout;
 
 
-const Content = (props) =>{
+const Board = (props) =>{
 
     const [state, setState] = useContext(ForumContext);
     const [categories, setCategories] = useState([]);
@@ -180,4 +180,4 @@ const Content = (props) =>{
 
 
 
-export default Content;
+export default Board;

@@ -1,6 +1,6 @@
 import React from 'react';
 import Headbar from './Headbar';
-import Content from './Content';
+import Board from './Board';
 import { Row, Col} from 'antd';
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
                     <Headbar />
                 </Col>
             </Row>
-            <Content/>
+            <Board/>
             </div>
         </div>
             
